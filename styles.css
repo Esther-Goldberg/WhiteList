@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.content-item {
+  margin-top: 25px;
+  border-top: solid black;
+  padding-top: 10px;
+}
+
+h1 {
+  background-color: #2eb85a;
+  padding: 10px;
+  font-size: 300%;
+  width: 100%
+}
+
+input, textarea, p, label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p, textarea, label {
+  font-size: 150%;
+  width: 100%;
+}
+
+p {
+  font-weight: bold;
+  font-size: 200%;
+
+}
+
+textarea {
+  padding: 10px;
+}
+
+.body {
+  position: absolute;
+  width: 100vw;
+}
+
+.content {
+  width: 50%;
+}
+
+.show-on-hover {
+  visibility: hidden;
+  font-size: 15px;
+  margin-left: 30px;
+  font-weight: normal;
+  opacity: 80%;
+}
+
+input:hover + .show-on-hover, label:hover + .show-on-hover {
+  visibility: visible;
+}
+
+input[type=submit] {
+  border-color: : #2eb85a;
+  border: solid 2px;
+  padding: 16px 32px;
+  text-decoration: none;
+  width: 100%;
+  font-size: 150%
+}
+
+input[type=submit]:active {
+  box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+}
+
+input[type=password] {
+  width: 100%;
+  padding: 10px;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width:678px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:1921px) {
+  .content {
+    width: 600px;
+  }
+}

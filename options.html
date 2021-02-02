@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>WhiteList - Options</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="body">
+    <h1>WhiteList - Options</h1>
+    <div class="content">
+      <div class="content-item">
+        <p>Blocker enabled?<input id="checkbox" type="checkbox"><span class="show-on-hover">Check to enable site blocker</span></p>
+      </div>
+
+      <div class="content-item">
+        <p>Block mode:</p>
+        <input id="blacklist" type="radio" name="mode" value="blacklist">
+        <label for="blacklist">blacklist</label><span class="show-on-hover">Only block sites in the list</span><br>
+        <input id="whitelist" type="radio" name="mode" value="whitelist">
+        <label for="whitelist">whitelist</label><span class="show-on-hover">Only allow sites in the list</span>
+      </div>
+
+      <div class="content-item" id="whitelist-div">
+        <p>Whitlisted sites:</p>
+        <textarea id="allowed_list" rows="10" cols="30" spellcheck="false"></textarea>
+      </div>
+
+      <div class="content-item" id="blacklist-div">
+        <p>Blacklisted sites:</p>
+        <textarea id="blocked_list" rows="10" cols="30" spellcheck="false"></textarea>
+      </div>
+      <input type="submit" id="save" value="Save"></input>
+    </div>
+  </div>
+  <script src="scripts/options.js">
+  </script>
+</body>
+
+</html>
