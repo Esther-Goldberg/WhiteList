@@ -4,4 +4,4 @@ You can choose whether to use a whitelist or a blacklist, and add URLs to a list
 
 ![Image of extension settings page](./Settings.PNG "Extension settings page")
 
-Install from [Chrome Store](https://chrome.google.com/webstore/detail/whitelist/eajfidjagfdheejfooghbheaimkghofa)
+<a href=https://chrome.google.com/webstore/detail/whitelist/eajfidjagfdheejfooghbheaimkghofa target="_blank"><img width=248px height=75px src="chrome_store_icon.png"/></a>
